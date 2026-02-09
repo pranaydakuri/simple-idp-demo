@@ -1,0 +1,4 @@
+app_name: demo-app
+app_type: springboot
+environment: dev
+deploy_to: kubernetes
