@@ -1,4 +1,4 @@
-app_name: demo-app
-app_type: springboot
-environment: test
-deploy_to: kubernetes
+app_name: Population count
+app_type: Java
+environment: prod
+deploy_to: Webapp
