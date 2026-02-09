@@ -1,4 +1,4 @@
 app_name: demo-app
 app_type: springboot
-environment: SUP
+environment: test
 deploy_to: kubernetes
