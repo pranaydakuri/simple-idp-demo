@@ -6,7 +6,7 @@ pipeline {
         stage('Read IDP Request') {
             steps {
                 echo "Reading developer request from IDP (YAML file)"
-                sh 'cat idp-input.yaml'
+                bat 'type idp-input.yaml'
             }
         }
 
