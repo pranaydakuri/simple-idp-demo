@@ -18,7 +18,23 @@ pipeline {
 
         stage('Deploy Application') {
             steps {
-                echo "Deploying application to environment"
+                script {
+                    def envValue = readFile('idp-input.yaml')
+                        .split('\n')
+                        .find { it.startsWith('environment:') }
+                        .split(':')[1]
+                        .trim()
+
+                    if (envValue == 'dev') {
+                        echo "Deploying application to DEV environment"
+                    } else if (envValue == 'test') {
+                        echo "Deploying application to TEST environment"
+                    } else if (envValue == 'prod') {
+                        echo "Deploying application to PROD environment (with stricter controls)"
+                    } else {
+                        echo "Unknown environment"
+                    }
+                }
             }
         }
     }
