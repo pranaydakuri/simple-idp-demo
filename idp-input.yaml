@@ -1,4 +1,4 @@
-app_name: Population count
-app_type: Java
-environment: prod
-deploy_to: Webapp
+app_name: Sample app
+app_type: springboot
+environment: dev
+deploy_to: Kubernates
