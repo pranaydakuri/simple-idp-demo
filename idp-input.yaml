@@ -1,4 +1,4 @@
 app_name: Sample app
 app_type: springboot
-environment: dev
-deploy_to: Kubernates
+environment: test
+deploy_to: webapp
